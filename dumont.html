@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Santos Dumont</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  body {
+      font: 400 15px Lato, sans-serif;
+      line-height: 1.8;
+      color: #818181;
+  }
+  h2 {
+      font-size: 24px;
+      text-transform: uppercase;
+      color: #303030;
+      font-weight: 600;
+      margin-bottom: 30px;
+  }
+  h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      color: #303030;
+      font-weight: 400;
+      margin-bottom: 30px;
+  }  
+  .jumbotron {
+      background-color: white;
+      color: #fff;
+      padding:10px 0 0 0;
+      font-family: Montserrat, sans-serif;
+	  margin-top: 140px;
+  }
+  .container-fluid {
+      padding: 60px 50px;
+  }
+  .bg-grey {
+      background-color: #f6f6f6;
+  }
+  .logo-small {
+      color: #3b5998;
+      font-size: 50px;
+  }
+  .logo {
+      color: #3b5998;
+      font-size: 200px;
+  }
+  .thumbnail {
+      padding: 0 0 15px 0;
+      border: none;
+      border-radius: 0;
+  }
+  .thumbnail img {
+      width: 100%;
+      height: 100%;
+      margin-bottom: 10px;
+  }
+  .carousel-control.right, .carousel-control.left {
+      background-image: none;
+      color: #3b5998;
+  }
+  .carousel-indicators li {
+      border-color: #3b5998;
+  }
+  .carousel-indicators li.active {
+      background-color: #3b5998;
+  }
+  .item h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      font-weight: 400;
+      font-style: italic;
+      margin: 70px 0;
+  }
+  .item span {
+      font-style: normal;
+  }
+  .panel {
+      border: 1px solid gray; 
+      border-radius:0 !important;
+      transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+      box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  .panel-footer .btn:hover {
+      border: 1px solid #f4511e;
+      background-color: #fff !important;
+      color: #f4511e;
+  }
+  .panel-heading {
+      color: #fff !important;
+      background-color: #f4511e !important;
+      padding: 25px;
+      border-bottom: 1px solid transparent;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+      background-color: white !important;
+  }
+  .panel-footer h3 {
+      font-size: 32px;
+  }
+  .panel-footer h4 {
+      color: #aaa;
+      font-size: 14px;
+  }
+  .panel-footer .btn {
+      margin: 15px 0;
+      background-color: #f4511e;
+      color: #fff;
+  }
+  .navbar {
+      margin-bottom: 0;
+      background-color: #3b5998;
+      z-index: 9999;
+      border: 0;
+      font-size: 12px !important;
+      line-height: 1.42857143 !important;
+      letter-spacing: 4px;
+      border-radius: 0;
+      font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+      color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+      color: #000 !important;
+      background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: #fff !important;
+  }
+  footer .glyphicon {
+      font-size: 20px;
+      margin-bottom: 20px;
+      color: #3b5998;
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+      animation-name: slide;
+      -webkit-animation-name: slide;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+        font-size: 150px;
+    }
+  }
+  </style>
+  <link rel="icon" type="image/png" href="img/icon96.png" sizes="96x96">
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage">SANTOS DUMONT</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#biografia">BIOGRAFIA</a></li>
+        <li><a href="#invencoes">INVENÇÕES</a></li>
+        <li><a href="#imagens">FOTOGRAFIAS</a></li>
+        <li><a href="#exposicao">EXPOSIÇÃO</a><li>
+        <li><a href="#contato">CONTATO</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+<div class="jumbotron">
+	<img class="img-responsive" src="img/dumontCartoon.png" alt="Santos Dumont" style="margin-left: auto;
+    margin-right: auto">
+	<span>
+		<audio controls autoplay>
+			<source src="audio/topGunTheme.mp3" type="audio/mpeg"> 
+		</audio>
+	</span>
+</div>
+
+
+
+<!-- Container (Seção Biografia) -->
+
+<div id="biografia" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>Biografia</h2>
+      <h4 align="justify">Alberto Santos Dumont nasceu em Palmira (atual cidade Santos Dumont) no estado de Minas Gerais, dia 20 de julho de 1873. Seu pai, Henrique Dumont era engenheiro francês, e sua mãe, Francisca Santos Dumont, era descendente de portugueses.
+		<br/><br/>Desde pequeno sua curiosidade e genialidade eram notáveis, ele mesmo que construía seus próprios brinquedos, consertava coisas, etc. Esse espírito inquieto, mais tarde foi responsável por uma das grandes invenções do século XX: o avião.
+		<br/><br/>Sua família mudou para o Rio de janeiro e em 1879, no estado de São Paulo, na região de Ribeirão Preto, dedicou-se a plantação de café. Por conselho de seu pai, começou a estudar mecânica, uma vez que sempre esteve interessado nas maquinarias da fazenda.
+		<br/><br/>Assim, a partir de 1891 decidiu aprofundar seus estudos em Paris, nas áreas de ciências, engenharia, física, química, mecânica, eletricidade e aeronáutica. Nas palavras do inventor:
+		<br/><br/>“No trajeto para a Torre Eiffel, nem uma só vez olhei para os telhados de Paris: eu flutuava sobre um mar de branco e azul, nada mais vendo senão meu objetivo.”</h4>	
+	</div>	
+    <div class="col-sm-4">
+      <img src="img/santosDumontSmile1.jpg" alt="Santos Dumont">
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid bg-grey">
+  <div class="row">
+    <div class="col-sm-4" style="width:300px;">
+      <img src="img/santosDumontFace1.jpg" alt="Foto de Santos Dumont"></img>
+    </div>
+    <div class="col-sm-8">
+      <h4 align="justify">Foi na capital francesa que realizou diversos experimentos, mas alguns resultaram em acidentes. De qualquer forma, Dumont se transformou em um dos homens mais influentes de Paris, ao lado de outros cientistas. Logo depois, voltou ao Brasil onde passou a viver em Petrópolis, Rio de Janeiro. A sua casa era chamada de "Encantada".
+		<br/><br/>A história revela que Dumont morreu deprimido, acometido pela esclerose múltipla e desolado pelo fato de uma de suas invenções, o avião, ser utilizado como arma de guerra. Segundo ele:<br/>
+		<br/>“No começo deste século, nós, os fundadores da Aeronáutica, havíamos sonhado com um futuro pacífico e grandioso para ela. Mas a guerra veio, apoderou-se de nossos trabalhos e, com todos os seus horrores, aterrorizou a humanidade.”
+
+		<br /><br/>Santos Dumont cometeu suicídio por enforcamento no banheiro do Grand Hôtel de La Plage, na cidade litorânea paulista, o Guarujá, dia 23 de julho de 1932; na época estava com 59 anos.</h4>
+      </div>
+  </div>
+</div>
+
+<!-- Container (Seção Invenções) -->
+<div id="invencoes" class="container-fluid text-center">
+  <h2>Invenções</h2>
+  <h4>Algumas das invenções de Santos Dumont foram:</h4>
+  <br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-bell logo-small"></span>
+      <h4>Balão a gás de pequeno porte</h4>
+      <p>No dia 04 de julho de 1898 realizou o primeiro voo de um balão com propulsão própria, na capital francesa.
+		(batizado de “Brasil”, em homenagem a sua terra natal)</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-heart logo-small"></span>
+      <h4>Dirigíveis</h4>
+      <p>Dumont realizou diversos experimentos, e com o Dirigível nº6, foi agraciado com o Prêmio Deutsch.</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="fa fa-paper-plane logo-small"></span>
+      <h4>Ultraleves</h4>
+      <p>Pequena aeronave construída em 1900, a qual conquistou os céus de Paris, recebeu o nome de Demoiselle (“senhorita” em francês).
+		  Chegou a atingir a velocidade recorde de 96 km/h e possuía 30 metros de comprimento,
+		  7 metros de largura e 11 metros de altura.</p>
+    </div>
+  </div>
+  <br><br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-plane logo-small"></span>
+      <h4>Avião (14 bis)</h4>
+      <p>Com essa invenção, foi feito o primeiro voo em um aparelho mais pesado que o ar, na cidade de Paris. Com essa demonstração,
+		 conquistou o prêmio Archdeacon, no dia 23 de outubro de 1906.</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-fire logo-small"></span>
+      <h4>Chuveiro de água quente</h4>
+      <p>Foi um de seus inventos criado no período que morou em Petrópolis, no Rio de Janeiro. O esquema era o seguinte: um balde perfurado dividido ao meio,
+		 recebia água quente e fria, acoplado a duas correntes de temperatura.</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-time logo-small"></span>
+      <h4 style="color:#303030;">Relógio de pulso</h4>
+      <p>Com o intuito de controlar o tempo enquanto estivesse no ar, Santos Dumont resolveu pedir a um amigo relojoeiro Louis Cartier,
+		 que projetasse um relógio com alças para fixar no pulso.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Seção Imagens) -->
+<div id="imagens" class="container-fluid text-center bg-grey">
+  <h2>Fotografias da época</h2>
+  <h4>Algumas das invenções de Dumont</h4>
+  <div class="row text-center slideanim">
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="img/14bis.jpg" alt="14 Bis" width="100%">
+        <p><strong>14 Bis</strong></p>
+        <p>Voo do 14 Bis</p>
+      </div>
+    </div>	
+    
+	<div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="img/dirigivelIX.jpg" alt="Dirigivel Número 9" width="400" height="300">
+        <p><strong>Dirigível número 9</strong></p>
+        <p>Dumont voando o dirigível número 9 sobre Paris</p>
+      </div>
+    </div>
+
+  
+	<div class="col-sm-4">
+		<div class="thumbnail">
+			<img src="img/demoiselle.jpg" alt="Demoiselle" width="400" height="300">
+			<p><strong>Demoiselle</strong></p>
+			<p>Santos Dumont voa no Demoiselle XX</p>
+		 </div>
+	</div>
+</div>   
+  
+  
+<div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+  <h2>Frases de Santos Dumont</h2>
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+	  <li data-target="#myCarousel" data-slide-to="3"></li>
+	  <li data-target="#myCarousel" data-slide-to="4"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <h4>“Os pássaros devem experimentar a mesma sensação,<br/> quando distendem suas longas asas e seu voo fecha o céu...<br/> 
+			Ninguém, antes de mim, fizera igual.”<br></h4>
+      </div>
+      <div class="item">
+        <h4>“Haverá hoje, talvez, quem ridicularize minhas<br/> predições sobre o futuro comercial dos aeroplanos.<br/> Quem viver, porém, verá”.<br></h4>
+      </div>
+      <div class="item">
+        <h4>“As coisas são mais belas quando vistas de cima.”</h4>
+      </div>
+	  <div class="item">
+        <h4>“O inventor é como a natureza: não dá saltos.”</h4>
+      </div>
+	  <div class="item">
+        <h4>“A questão do aeroplano estava, havia já alguns anos, na ordem do dia;<br/> eu, porém, nunca tomava parte nas discussões,<br/>
+			porque sempre acreditei que o inventor deve trabalhar em silêncio;<br/> as opiniões estranhas nunca produzem nada de bom”.</h4>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+<!-- Add Seção Exposição -->
+
+<div id="exposicao" class="container-fluid bg-grey">
+  
+  <div class="container-fluid text-center bg-grey">
+  <h2>Exposição Santos Dumont</h2><br>
+  <h4>Palácio da Instrução - Rua Antonio Maria, 151 - Centro, Cuiabá - MT, Brasil</h4><br/>
+  <strong><p>Coleção Brasiliana Itaú Cultural</p>
+  <p>A mostra, uma parceria entre o Itaú Cultural e a Secretaria de Estado de Cultura (SEC-MT),
+	retrata momentos importantes da vida de Alberto Santos Dumont e acontece até o dia 1º de outubro com entrada gratuita.</p></strong>
+  <div class="row text-center slideanim">
+	
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="img/exposicao2.jpg" alt="Foto perfil" style="width:400px; height:300px;">
+        <p><strong>Foto perfil</strong></p>
+        <p>Foto de perfil de Alberto</p>
+      </div>
+    </div>
+	
+	<div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="img/exposicao1.jpg" alt="Demoiselle" style="width:400px; height:300px;">
+        <p><strong>Demoiselle</strong></p>
+        <p>Foto do Demoiselle</p>
+      </div>
+    </div>
+    
+	<div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="img/exposicao3.jpeg" alt="Maquete do 14 Bis" style="width:400px; height:300px;">
+        <p><strong>14 Bis</strong></p>
+        <p>Maquete em escala do 14 Bis</p>
+      </div>
+    </div>
+	
+	<div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="img/exposicao5.jpg" alt="Foto exposição Itaú" style="width:400px; height:300px;">
+        <p><strong>Exposição</strong></p>
+        <p>Foto do acervo da coleção brasiliana Itaú</p>
+      </div>
+    </div>
+	
+	<div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="img/exposicao6.jpg" alt="Foto exposição Itaú" style="width:400px; height:300px;">
+        <p><strong>Exposição</strong></p>
+        <p>Foto do acervo da coleção brasiliana Itaú</p>
+      </div>
+    </div>
+	
+	<div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="img/exposicao7.jpg" alt="Foto exposição Itaú" style="width:400px; height:300px;">
+        <p><strong>Exposição</strong></p>
+        <p>Foto do acervo da coleção brasiliana Itaú</p>
+      </div>
+    </div>
+	
+	<div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="img/exposicao8.jpg" alt="Foto exposição Itaú" style="width:400px; height:300px;">
+        <p><strong>Exposição</strong></p>
+        <p>Foto do acervo da coleção brasiliana Itaú</p>
+      </div>
+    </div>
+	
+	<div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="img/exposicao9.jpg" alt="Foto exposição Itaú" style="width:400px; height:300px;">
+        <p><strong>Exposição</strong></p>
+        <p>Foto do acervo da coleção brasiliana Itaú</p>
+      </div>
+    </div>
+	
+	<div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="img/exposicao10.jpg" alt="Foto exposição Itaú" style="width:400px; height:300px;">
+        <p><strong>Exposição</strong></p>
+        <p>Foto do acervo da coleção brasiliana Itaú</p>
+      </div>
+    </div>
+	
+	<div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="img/exposicao4.jpg" alt="Foto exposição Itaú" style="width:auto; height:300px;">
+        <p><strong>Exposição</strong></p>
+        <p>Foto do acervo da coleção brasiliana Itaú</p>
+      </div>
+    </div>
+	
+	<div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="img/exposicao11.jpg" alt="Foto exposição Itaú" style="height:300px;">
+        <p><strong>Exposição</strong></p>
+        <p>Foto do acervo da coleção brasiliana Itaú</p>
+      </div>
+    </div>
+	
+	<div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="img/exposicao12.jpg" alt="Foto exposição Itaú" style="height:300px;">
+        <p><strong>Exposição</strong></p>
+        <p>Foto do acervo da coleção brasiliana Itaú</p>
+      </div>
+    </div>
+	
+</div><br>
+  
+  
+
+<!-- Add Google Maps -->
+<h4>Localização do Palácio da Instrução</h4>
+<div id="googleMap" style="height:400px;width:100%;"></div>
+<script>
+function myMap() {
+var myCenter = new google.maps.LatLng(-15.5981149,-56.09631);
+var mapProp = {center:myCenter, zoom:16, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+var marker = new google.maps.Marker({position:myCenter});
+marker.setMap(map);
+}  
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDveRHXmWt1dJIuW_xa2eGlqTsIsMChEY4&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+</div>
+
+<!-- Container (Seção Contato) -->
+<div id="contato" class="container-fluid bg-grey">
+  <h2 class="text-center">CONTATO</h2>
+  <div class="row">
+    <div class="col-sm-5">
+		<p>Contato para sugestão do site</p>
+		<p><span class="glyphicon glyphicon-user"></span> Alex Junio Pinheiro de Almeida</p>
+		<p><span class="glyphicon glyphicon-map-marker"></span> Várzea Grande, MT</p>
+		<!--<p><span class="glyphicon glyphicon-phone"></span> +55 65 993138149</p>
+		<p><span class="glyphicon glyphicon-envelope"></span> contato.alex.pinheiro95@gmail.com</p>
+		
+		-->
+		<p><span class="glyphicon glyphicon-home"></span> facebook.com/AlexPinheiro95</p>
+	</div>
+    <div class="col-sm-7 slideanim">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Nome" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comentário" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Enviar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p>Tema baseado no exemplo disponível em <a href="https://www.w3schools.com" title="Visit w3schools">www.w3schools.com</a></p>
+</footer>
+
+<script>
+
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+
+</body>
+</html>
